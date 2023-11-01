@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write code here -->
+    <div class="wraper-modal">
+        <div class="header-modal">
+            <p class="header-modal__p">Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань <br> Надіємось, що вам сподобається і ви отримаєте позитив! <br> Бажаємо Вам гарно провести час!</p>
+            <form action="" class="header-modal__form">
+                <h2 class="header-modal__form-title">Введіть своє ім’я:</h2>
+                <input type="text" class="header-modal__form-text" placeholder="Ваше ім’я...">
+                <button class="header-modal__form-btn">Зберегти</button>
+            </form>
+        </div>
+    </div>
+    
+    <header class="header">
+        <img src="./img/logo.svg" class="header__logo">
+        <div class="header__links">
+            <select name="category" class="header__links-link">
+                <option value="Все">Все</option>
+                <option value="Числовий">Числовий</option>
+                <option value="Ігровий">Ігровий</option>
+                <option value="Ознайомчий">Ознайомчий</option>
+            </select>
+            <a href="#our-team" class="header__links-link">Наша команда</a>
+            <a href="#contacts" class="header__links-link">Контакти</a>
+        </div>
+        <span class="header__user">Вітаємо, User!</span>
+    </header>
+    
+
+
+    <main class="main">
+        <div class="main__wraper">
+            <h1 class="main__head-title">Популярні інетрактивні ігри</h1>
+
+            <section class="main__AС numerical">
+                <h2 class="main__title">Перевір в який рік ти народився</h2>
+                <div class="main__AC-wraper">
+                    <div class="main__input-wraper">
+                        <input class="main__input-wraper-input" type="text" placeholder="Введіть рік народження">
+                        <button class="main__input-wraper-btn main__input-wraper-btn--ac"><img src="./img/search.svg" alt=""></button>
+                    </div>
+                    <span class="main__success"></span>
+                </div>
+            </section>
+            <script src="./js/AC(1).js"></script>
+
+            <section class="main__GN numerical">
+                <h2 class="main__title">Вгадай число, яке загадав комп’ютер</h2>
+                <div class="main__GN-wraper">
+                    <div class="main__input-wraper">
+                        <input class="main__input-wraper-input main__input-wraper-input--gn" type="text" name="" id="" placeholder="Введіть число">
+                        <button class="main__input-wraper-btn main__input-wraper-btn--gn"><img src="./img/search.svg" alt=""></button>
+                    </div>
+                    <span class="main__success main__success--gn"></span>
+                </div>
+            </section>
+            <script src="./js/GN(2).js"></script>
+
+            <section class="main__PSS game">
+                <h2 class="main__title">Камінь - ножиці - папір</h2>
+                <div class="main__PSS-wraper">
+                    <img src="./img/stone.svg" alt="" class="main__btn main__btn--pss">
+                    <img src="./img/scissors.svg" alt="" class="main__btn main__btn--pss">
+                    <img src="./img/paper.svg" alt="" class="main__btn main__btn--pss">
+                </div>
+                <span class="main__success main__success--pss"></span>
+                <span class="main__btn main__btn--computer">Варіант комп’ютера</span> 
+                <div class="main__PSS-results">
+                    <span class="main__PSS-result">Рахунок:</span> 
+                    <span class="main__PSS-result"></span>
+                    <span class="main__PSS-result"></span>
+                </div>
+            </section>
+            <script src="./js/pss(3).js"></script>
+
+            <section class="main__C numerical">
+                <h2 class="main__title">Калькулятор</h2>
+                <div class="main__C-wraper">
+                    <input class="main__input main__input--c" type="text" placeholder="Введіть число">
+                    <div class="main__C-wraper-arichmetics">
+                        <button class="main__btn main__btn--c" onclick="buttonPressed('1')">+</button>
+                        <button class="main__btn main__btn--c" onclick="buttonPressed('2')">*</button>
+                        <button class="main__btn main__btn--c" onclick="buttonPressed('3')">-</button>
+                        <button class="main__btn main__btn--c" onclick="buttonPressed('4')">/</button>
+                    </div>
+                    <input class="main__input main__input--c" type="text" placeholder="Введіть число">
+                    <button class="main__btn main__btn__c--res">=</button>
+                    <span class="main__input__c__answer">Результат</span>
+                </div>
+            </section>
+            <script src="./js/c(4).js"></script>
+
+
+            <section class="main__СT numerical">
+                <h2 class="main__title">Калькулятор часу</h2>
+                <div class="main__CT-wraper">
+                    <div class="main__input-wraper">
+                        <input class="main__input-wraper-input main__input-wraper-input--ct" type="text" placeholder="Введіть число">
+                        <button class="main__input-wraper-btn main__input-wraper-btn--ct"><img src="./img/search.svg" alt=""></button>
+                    </div>
+                    <span class="main__CT-wraper-result"></span>
+                    <span class="main__CT-wraper-date"></span>
+                </div>
+            </section>
+            <script src="./js/ct(5).js"></script>
+
+
+            <section class="main__f game">
+                <h2 class="main__title">Футбол</h2>
+                <div class="main__f-field">
+                    <img src="./img/ball.svg" class="main__f-field-img">
+                </div>
+            </section>
+            <script src="./js/f(6).js"></script>
+
+
+
+            <section class="main__MN numerical">
+                <h2 class="main__title">Введіть 3 числа</h2>
+                <div class="main__MN-wraper">
+                    <input type="text" id="" class="main__input main__input--mn" placeholder="Введіть число">
+                    <input type="text" id="" class="main__input main__input--mn" placeholder="Введіть число">
+                    <input type="text" id="" class="main__input main__input--mn" placeholder="Введіть число">
+                </div>
+                <span class="main__MN-result">Найбільше число, яке ви ввели - (число)</span>
+            </section>
+            <script src="./js/mn(7).js"></script>
+
+
+            <section class="main__OT acquaintance" id="our-team">
+                <h2 class="main__title">Наша команда</h2>
+                <div class="main__OT-wraper">
+                    <img class="main__OT-wraper-arrow main__OT-wraper-arrow--left" src="./img/arrow.svg" alt="">
+                    <img class="main__OT-wraper-photo" src="">
+                    <img class="main__OT-wraper-arrow main__OT-wraper-arrow--right" src="./img/arrow.svg" alt="">
+                </div>
+                <span class="main__OT-name"></span>
+                <span class="main__OT-description"></span>
+                <div class="main__OT-line"></div>
+            </section>
+            <script src="./js/ot(8).js"></script>
+
+            
+            <section class="main__S acquaintance">
+                <h2 class="main__title">Обери вченого/их</h2>
+                <div class="main__S-wraper">
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                    <div class="main__S-wraper-item">
+                        <span class="main__S-wraper-item-name"></span>
+                        <span class="main__S-wraper-item-date"></span>
+                    </div>
+                </div>
+                <div class="main__S-wraper-btns">
+                    <div>
+                        <input type="button" value="Які вчені народилися в 19 ст." class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Відсортувати вчених за алфавітом" class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Відсортувати вчених за кількістю прожитих років" class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Знайти вченого, який народився найпізніше" class="main__S-wraper-btn main__btn">
+                    </div>
+                    <div>
+                        <input type="button" value="Знайти рік народження Albert Einshtein" class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Знайти вчених, прізвища яких починаються на літеру “С”" class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Видалити всіх вчених, ім’я яких починається на “А”" class="main__S-wraper-btn main__btn">
+                        <input type="button" value="Знайти вченого, який прожив найдовше і вченого,
+                        який прожив найменше" class="main__S-wraper-btn main__btn">
+                    </div>
+                    <input type="button" value="Знайти вчених, в яких співпадають перші літери імені і прізвища" class="main__S-wraper-btn main__btn">
+                </div>
+            </section>
+            <script src="./js/s(9).js"></script>
+            
+
+
+        </div>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <img src="./img/logo.svg" class="footer__logo">
+        <div class="footer__contacts">
+            <span class="footer__contacts-item">Тел: +38 (123) 456 78 90</span>
+            <span class="footer__contacts-item">E-Mail: codingmagic@gmail.com</span>
+            <span class="footer__contacts-item">Facebook: CodingMagic</span>
+            <span class="footer__contacts-item">Twitter: CodingMagic</span>
+            <span class="footer__contacts-item">Instagram: CodingMagic</span>
+        </div>
+        <div class="footer__btn">
+            <input class="footer__btn-input" type="email" placeholder="Ваша ел. адреса...">
+            <input class="footer__btn-btn" type="button" value="Підписатись">
+        </div>
+    </footer>
+
+    <div class="footer-model-wrapper">
+        <div class="footer-model">
+            <span class="footer-model-btn">x</span>
+            <p class="footer-model-text">Дякую за підписку!</p>
+        </div>
+    </div>
+
+    <!-- write code here -->
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
