@@ -24,8 +24,13 @@
     }
 
     .main__MN-wraper, .main__CT-wraper, .main__C-wraper, .main__GN-wraper, .main__AC-wraper {
+        max-width: max-content;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .main__MN-wraper, .main__C-wraper {
+        margin: auto;
     }
 
     .main__input-wraper {
@@ -36,5 +41,41 @@
         position: static;
         margin: auto;
         margin-top: 30px;
+    }
+
+    .main__PSS-wraper{
+        margin-bottom: 50px;
+    }
+
+    .main__S-wraper-item {
+        width: 110px;
+        height: 110px;
+    }
+
+    .main__f-field {
+        width: 400px;
+    }
+
+    .main__OT-wraper {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    section::before {
+        width: 300px;
+    }
+
+    .main__success{
+        display: inline;
+    }
+}
+
+@media(max-width: 440px) {
+    .main__f-field {
+        width: 350px;
+    }
+
+    .main__S-wraper-btn:last-child {
+        
     }
 }

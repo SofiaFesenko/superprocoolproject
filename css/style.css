@@ -248,12 +248,14 @@ section::before {
 }
 
 .main__f-field {
+    margin: auto;
     position: relative;
     height: 220px;
     background-color: #5ABB58;
     border: 2px solid black;
     border-radius: 37px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .main__f-field-img {
